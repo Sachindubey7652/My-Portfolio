@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ea1ab6e78a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+<div class="container">
+    <nav>
+        <img src="images/logo.png" alt="logoimg" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header">
+        <span class="typing">Java Developer</span>
+        <h1>Hi,I'm  <span>Sachin</span> <br> Dubey From <br> Gorakhpur</h1>
+    </div>
+</div>
+    </div>
+    <!-- -----------About---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Sachin1.jpg" alt="sachinimg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Currently pursuing BCA at Shri Ram Swaroop Memorial University with a CGPA of 8.96. Thrives on challenges and excels in Java, DSA, MySQL, HTML, CSS, and JavaScript. Aspiring frontend developer with Git and GitHub proficiency. Enthusiastic Java developer with a dedication to continuous learning, showcased through innovative projects. Demonstrates adaptability, strong work ethic, and remarkable interpersonal skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span><br>Covered Core Java Concepts,JDBC,Servlet and JSP</li>
+                            <li><span>Frontend Web Development</span><br>Covered HTML,CSS,JavaScript,Mysql,Bootstrap and React</li>
+                            <li><span>DataBases</span><br>Proficient in Sql and Mysql.Familier Working With Mysql Workbench</li>
+                            <li><span>C</span><br>Intermediate Level</li>
+                            <li><span>C++</span><br>Intermediate Level</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2023- June 2023</span><br>Web Dvelopment Intern at Oasis Infobyte</li>
+                            <li><span>Jan 2024-March 2023</span><br>Java Development  Intern at Oasis Infobyte</li>
+                            <li><span>DB Administrator</span><br>Managing Datatbase Operations</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                          
+ 
+
+                            <li><span>2018</span><br>Madhav Public School, Gorakhpur <br>
+                                 High School</li>
+                            <li><span>2021</span><br>Oxford Public School , Gorakhpur <br>
+                                 Intermediate</li>
+                            <li><span>2022-Current</span><br>Pursuing BCA From Shri Ram Swaroop Memorial University, Lucknow <br>
+                                 Bachelor of Computer Application <br>
+                                 Current Grade 8.96 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ------------Services------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Devlopment</h2>
+                <p>Proficient in HTML, CSS, and JavaScript, with expertise in frameworks like Bootstrap and React. Skilled in version control with Git and repository management on GitHub. Excels in creating responsive, dynamic web applications and collaborating effectively within development teams. Passionate about leveraging technology to drive innovation and deliver exceptional user experiences.</p>
+                <a href="#portfolio">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Java Development</h2>
+                <p>Mastering Core Java equipped me with the foundation of programming excellence. From JDBC for seamless database connectivity to Servlets and JSP for dynamic web development, I've harnessed the power to craft robust, interactive solutions. Ready to unleash innovation and drive results through Java's limitless possibilities.</p>
+                <a href="#portfolio">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>DB Administration</h2>
+                <p>Proficient in SQL, adept at database administration tasks such as query optimization, data manipulation, and schema design. Well-versed in ensuring database integrity, security, and performance. Ready to leverage expertise to streamline data operations and drive organizational success as a DB Administrator.</p>
+                <a href="#portfolio">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------My Work------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/images/wheather.jpg" height="100%" alt="sachinimg">
+                <div class="layer">
+                    <h3>Wheather App</h3>
+                    <p>This will shows you The wheather of your surroundings.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/cart.jpeg" height="100%" alt="sachinimg">
+                <div class="layer">
+                    <h3>E-Commerce Cart App</h3>
+                    <p>This will enables you to Shop Products around the world.</p>
+                    <a href="https://github.com/Sachindubey7652/shopping-cart"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/calculator.jpg" height="100%" alt="sachinimg">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>You Can Perform Your Calculations Here.</p>
+                    <a href="https://github.com/Sachindubey7652/Calculator"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- ------------Portfolio------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1  class ="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> sachindubey7897@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>  +91 7652085794</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sachin-dubey-4b300425a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/sachindubey_a1/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100029795362922"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/SachinDube66782"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-square-envelope"></i></a>
+                </div>
+                <a href="/images/Sachin Dubey Resume.pdf" download class="btn btn2">Download My CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="" name="submit-to-google-sheet">
+                    <input type="text" name ="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name ="Email" placeholder="Enter Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Type Your Message Here !"></textarea>
+                    <button type="submit" class="btn btn2" >Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-solid fa-copyright"></i> Sachin. Made With <i class="fa-solid fa-heart"></i> By Sachin Dubey </p>
+    </div>
+</div>
+   
+    <script src="/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
