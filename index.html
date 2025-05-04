@@ -12,6 +12,8 @@
 <div class="container">
     <nav>
         <img src="images/logo.png" alt="logoimg" class="logo">
+        <p id="current-time"></p>
+      
         <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -20,11 +22,15 @@
             <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
         </ul>
+        
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+           
     </nav>
     <div class="header">
         <span class="typing">Java Developer</span>
         <h1>Hi,I'm  <span>Sachin</span> <br> Dubey From <br> Gorakhpur</h1>
+        <div id="greeting" class="greeting"></div>
+        <p id="current-time"></p>
     </div>
 </div>
     </div>
@@ -37,7 +43,13 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Currently pursuing BCA at Shri Ram Swaroop Memorial University with a CGPA of 9.14. Thrives on challenges and excels in Java, DSA, MySQL, HTML, CSS, and JavaScript. Aspiring frontend developer with Git and GitHub proficiency. Enthusiastic Java developer with a dedication to continuous learning, showcased through innovative projects. Demonstrates adaptability, strong work ethic, and remarkable interpersonal skills.</p>
+                   <p>🔸 Final Year BCA @ SRMU  <br>
+
+                      🔸 Branch Topper With a CGPA of 9.17  <br>
+
+                      🔸 Placed at Accenture,TCS,EaseMyTrip,Morbido InfraTech  <br>
+                    
+                      🔸 6+ Projects built</p>   <br>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -48,7 +60,7 @@
                         <ul>
                             <li><span>Java</span><br>Covered Core Java Concepts,Swing,JDBC,Servlet and JSP</li>
                             <li><span>Frontend Web Development</span><br>Covered HTML,CSS,JavaScript,Mysql,Bootstrap and React</li>
-                            <li><span>DataBases</span><br>Proficient in Sql and Mysql.Familier Working With Mysql Workbench</li>
+                            <li><span>DataBases</span><br>Proficient in Sql and Mysql.Familiar Working With Mysql Workbench</li>
                             <li><span>C</span><br>Intermediate Level</li>
                             <li><span>C++</span><br>Intermediate Level</li>
                         </ul>
@@ -56,8 +68,8 @@
                     <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>May 2023- June 2023</span><br>Web Dvelopment Intern at Oasis Infobyte</li>
-                            <li><span>Jan 2024-March 2023</span><br>Java Development  Intern at Oasis Infobyte</li>
-                            <li><span>DB Administrator</span><br>Managing Datatbase Operations</li>
+                            <li><span>Jan 2024 - March 2024</span><br>Java Development  Intern at Oasis Infobyte</li>
+                            <li><span>DB Administrator</span><br>Managing Database Operations</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -66,12 +78,12 @@
  
 
                             <li><span>2018</span><br>Madhav Public School, Gorakhpur <br>
-                                 High School</li>
+                                🔸 High School</li>
                             <li><span>2021</span><br>Oxford Public School , Gorakhpur <br>
-                                 Intermediate</li>
+                                🔸Intermediate</li>
                             <li><span>2022-Current</span><br>Pursuing BCA From Shri Ram Swaroop Memorial University, Lucknow <br>
-                                 Bachelor of Computer Application <br>
-                                 Current Grade 9.14 CGPA</li>
+                                🔸 Bachelor of Computer Application <br>
+                                🔸 Current Grade 9.17 CGPA</li>
                         </ul>
                     </div>
                 </div>
@@ -85,7 +97,7 @@
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>Web Devlopment</h2>
+                <h2>Web Development</h2>
                 <p>Proficient in HTML, CSS, and JavaScript, with expertise in frameworks like Bootstrap and React. Skilled in version control with Git and repository management on GitHub. Excels in creating responsive, dynamic web applications and collaborating effectively within development teams. Passionate about leveraging technology to drive innovation and deliver exceptional user experiences.</p>
                 <a href="#portfolio">Learn More</a>
             </div>
@@ -107,44 +119,67 @@
 <!-- ------------My Work------------- -->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="/images/wheather.jpg" height="100%" alt="wheatherimg">
-                <div class="layer">
-                    <h3>Wheather App</h3>
-                    <p>This will shows you The wheather of your surroundings.</p>
-                    <a href="https://github.com/Sachindubey7652/Weather-App"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="/images/cart.jpeg" height="100%" alt="cartimg">
-                <div class="layer">
-                    <h3>E-Commerce Cart App</h3>
-                    <p>This will enables you to Shop Products around the world.</p>
-                    <a href="https://github.com/Sachindubey7652/shopping-cart"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="/images/calculator.jpg" height="100%" alt="Calcimg">
-                <div class="layer">
-                    <h3>Calculator</h3>
-                    <p>You Can Perform Your Calculations Here.</p>
-                    <a href="https://github.com/Sachindubey7652/Calculator"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="/images/sas.png" height="100%" alt="tourismcimg">
-                <div class="layer">
-                    <h3>Sachin Travel and Tourism</h3>
-                    <p>You Can Book Your Destinations Here.</p>
-                    <a href="https://github.com/Sachindubey7652/Sachin-Travel-and-Tourism"><i class="fa-solid fa-link"></i></a>
-                </div>
-            </div>
+      <h1 class="sub-title">My Work</h1>
+  
+      <!-- All projects inside one flex container -->
+      <div class="work-list" id="projectList">
+        <!-- Initially Visible Projects -->
+        <div class="work">
+          <img src="/images/Weather.jpg" height="100%" alt="Weatherimg" />
+          <div class="layer">
+            <h3>Weather App</h3>
+            <p>This will show you the weather of your surroundings.</p>
+            <a href="https://github.com/Sachindubey7652/Weather-App"><i class="fa-solid fa-link"></i></a>
+          </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <div class="work">
+          <img src="/images/cart.jpeg" height="100%" alt="cartimg" />
+          <div class="layer">
+            <h3>E-Commerce Cart App</h3>
+            <p>This enables you to shop products around the world.</p>
+            <a href="https://github.com/Sachindubey7652/shopping-cart"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="/images/calculator.jpg" height="100%" alt="Calcimg" />
+          <div class="layer">
+            <h3>Calculator</h3>
+            <p>You can perform your calculations here.</p>
+            <a href="https://github.com/Sachindubey7652/Calculator"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+  
+        <!-- Hidden Projects -->
+        <div class="work hidden-project">
+          <img src="/images/sas.png" height="100%" alt="tourismimg" />
+          <div class="layer">
+            <h3>Sachin Travel and Tourism</h3>
+            <p>You can book your destinations here.</p>
+            <a href="https://github.com/Sachindubey7652/Sachin-Travel-and-Tourism"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work hidden-project">
+          <img src="/images/ebook.jpeg" height="100%" alt="ebookimg" />
+          <div class="layer">
+            <h3>E-Book Management System</h3>
+            <p>Login/Register, Upload & Download PDFs, Admin Panel, JSP & Servlets.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work hidden-project">
+          <img src="/images/aiquiz.jpeg" height="100%" alt="aiquizimg" />
+          <div class="layer">
+            <h3>AI Quiz App</h3>
+            <p>Dynamic Quiz Portal, AI Recommendations, Java + JSP + MySQL.</p>
+            <a href="https://github.com/Sachindubey7652/AIQUIZPORTAL"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Toggle Button -->
+      <a href="#" class="btn" id="seeMoreBtn">See More</a>
     </div>
-</div>
+  </div>
 <!-- ------------Portfolio------------- -->
 <div id="contact">
     <div class="container">

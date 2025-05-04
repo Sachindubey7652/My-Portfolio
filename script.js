@@ -6,8 +6,38 @@ document.addEventListener('DOMContentLoaded', function() {
         backSpeed: 60,
         loop: true
     });
+    
 });
+function updateGreetingAndTime() {
+    const greetingElement = document.getElementById("greeting");
+    const timeElement = document.getElementById("current-time");
 
+    const now = new Date();
+    const hour = now.getHours();
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+
+    let greeting;
+    if (hour < 12) {
+        greeting = "Good Morning 🌅";
+    } else if (hour < 18) {
+        greeting = "Good Afternoon ☀️";
+    } else {
+        greeting = "Good Evening 🌙";
+    }
+
+    greetingElement.textContent = `${greeting}, Welcome To My Portfolio!`;
+
+    // Format time as HH:MM:SS
+    const timeString = `${hour.toString().padStart(2, '0')}:${minutes}:${seconds}`;
+    timeElement.textContent = `Current Time: ${timeString}`;
+}
+
+// Initial update
+updateGreetingAndTime();
+
+// Update every second
+setInterval(updateGreetingAndTime, 1000);
 let  tablinks = document.getElementsByClassName("tab-links");
 let  tabcontents = document.getElementsByClassName("tab-contents");
 function opentab(tabname){
@@ -46,4 +76,28 @@ function closemenu(){
       .catch(error => console.error('Error!', error.message))
   })
 
-
+  const btn = document.getElementById("seeMoreBtn");
+  const hiddenProjects = document.querySelectorAll(".hidden-project");
+  let isExpanded = false;
+  
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+  
+    hiddenProjects.forEach(project => {
+      project.classList.toggle("show");
+    });
+  
+    // Toggle button text
+    btn.textContent = isExpanded ? "See More" : "See Less";
+  
+    // Flip the state
+    isExpanded = !isExpanded;
+  });
+  
+  const menuButton = document.querySelector('.fa-bars');
+  const navMenu = document.querySelector('nav ul');
+  
+  menuButton.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+  });
+  
